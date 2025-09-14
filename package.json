@@ -27,15 +27,15 @@
     "bridge",
     "cross-platform"
   ],
-  "author": "Polybase Labs",
+  "author": "Axnjr",
   "license": "MIT",
-  "homepage": "https://github.com/polybase/react-native-rs",
+  "homepage": "https://github.com/Axnjr/react-native-rs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/polybase/react-native-rs.git"
+    "url": "https://github.com/Axnjr/react-native-rs.git"
   },
   "bugs": {
-    "url": "https://github.com/polybase/react-native-rs/issues"
+    "url": "https://github.com/Axnjr/react-native-rs/issues"
   },
   "files": [
     "lib",
