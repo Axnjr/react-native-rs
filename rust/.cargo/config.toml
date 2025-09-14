@@ -1,0 +1,15 @@
+[env]
+TS_RS_EXPORT_DIR = { value = "../src/types", relative = true }
+
+[build]
+# Optimize for size and performance
+rustflags = ["-C", "opt-level=3", "-C", "lto=fat"]
+
+[target.aarch64-apple-ios]
+rustflags = ["-C", "embed-bitcode=yes"]
+
+[target.aarch64-apple-ios-sim] 
+rustflags = ["-C", "embed-bitcode=yes"]
+
+[target.x86_64-apple-ios]
+rustflags = ["-C", "embed-bitcode=yes"]

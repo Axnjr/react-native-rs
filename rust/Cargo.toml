@@ -1,0 +1,36 @@
+[package]
+name = "react-native-rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+eyre = "0.6"
+tokio = { version = "1.0", features = ["full"] }
+rayon = "1.7"
+num_cpus = "1.15"
+lazy_static = "1.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+image = { version = "0.24", optional = true }
+sha2 = "0.10"
+base64 = "0.21"
+rand = "0.8"
+ts-rs = { version = "7.1", optional = true }
+
+[features]
+default = []
+image-processing = ["image"]
+ts-rs = [
+  "dep:ts-rs",
+  "serde/derive"
+]
+
+[[bin]]
+name = "generate-types"
+path = "src/bin/generate_types.rs"
+required-features = ["ts-rs"]

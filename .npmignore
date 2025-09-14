@@ -1,0 +1,47 @@
+# Source files
+src/
+rust/src/
+rust/target/
+rust/Cargo.lock
+
+# Development files
+example/
+.github/
+.vscode/
+.idea/
+
+# Build scripts (users should build themselves)
+rust/build.sh
+rust/install-prerequisites.sh
+
+# Documentation (except README)
+CONTRIBUTING.md
+docs/
+
+# Test files
+**/*.test.*
+**/__tests__/
+jest.config.js
+jest.setup.js
+
+# Linting
+.eslintrc.js
+.prettierrc
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+
+# IDE
+*.swp
+*.swo
